@@ -1,0 +1,8 @@
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: ["/bin/bash", "/app/scripts/boot.sh"]
+    ports:
+      - "8080:8080"
